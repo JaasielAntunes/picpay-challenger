@@ -12,12 +12,12 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Entity
+@Entity(name = "users")
 @Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode(of="id")
+@EqualsAndHashCode(of = "id")
 public class User {
 
     @Id
@@ -48,8 +48,6 @@ public class User {
     private String password;
 
     @NotEmpty(message = "O campo não pode ser vazio!")
-    @Min(value = 4, message = "O campo deve conter entre 4 e 20 caracteres!")
-    @Max(value = 10, message = "O campo deve conter entre 4 e 20 caracteres!")
     private BigDecimal balance;
 
     @Enumerated(EnumType.STRING)
