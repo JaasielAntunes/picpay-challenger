@@ -66,7 +66,7 @@ public class TransactionService {
         ResponseEntity<Map> authorizationResponse = restTemplate.getForEntity("https://run.mocky.io/v3/54dc2cf1-3add-45b5-b5a9-6bf7e7f1f4a6", Map.class);
 
         if (authorizationResponse.getStatusCode() == HttpStatus.OK) {
-            String message = (String) authorizationResponse.getBody().get("message");
+            String message = authorizationResponse.getBody().get("message").toString();
             return "Autorizado".equalsIgnoreCase(message);
         } else return false;
     }
