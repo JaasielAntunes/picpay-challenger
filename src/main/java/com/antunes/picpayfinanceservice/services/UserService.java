@@ -19,10 +19,10 @@ public class UserService {
 
     public void validateTransaction(User sender, BigDecimal amount) throws Exception {
         if (sender.getUserType() == UserType.MERCHANT) {
-            throw new Exception("Usuário do tipo lojista não está autorizado a realizar transação!");
+            throw new Exception("Usuário do tipo lojista não está autorizado a realizar transações!");
         }
 
-        if (sender.getBalance().compareTo(amount) < 0) {
+        if (sender.getBalance().compareTo(amount) <= 0) {
             throw new Exception("Saldo insuficiente!");
         }
     }
