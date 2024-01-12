@@ -7,8 +7,7 @@
 
 Este projeto é a construção de uma API utilizando as stacks **Java e o framework Spring.**
 
-Realizei o desenvolvimento do Microservice com base no vídeo [Youtube Channel]([https://youtu.be/eFgeO9M9lLw?si=uyhUXrR-NLEpBW6p](https://www.youtube.com/watch?v=QXunBiLq2SM&ab_channel=FernandaKipper%7CDev)), o qual foi demonstrado a resolução 
-do [PicPay Challenge]([https://github.com/uber-archive/coding-challenge-tools/blob/master/coding_challenge.md](https://github.com/PicPay/picpay-desafio-backend)).
+Realizei o desenvolvimento do Microservice com base no vídeo [Youtube Channel](https://www.youtube.com/watch?v=QXunBiLq2SM&ab_channel=FernandaKipper%7CDev), o qual foi demonstrado a resolução do [PicPay Challenge](https://github.com/uber-archive/coding-challenge-tools/blob/master/coding_challenge.md).
 
 ## Aprendizado
 
